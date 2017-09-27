@@ -25,13 +25,21 @@ class PostsPage extends Component {
       return (
         <div className="posts-page">
 
-          <Components.HeadTags url={Posts.getPageUrl(post, true)} title={post.title} image={post.thumbnailUrl} description={post.excerpt} />
+          <nav className="navbar navbar-light bg-faded">
+              <a className="navbar-brand" href="/">
+                <i className="fa fa-arrow-left" aria-hidden="true"></i> Home
+              </a>
+          </nav>
           
+
+          <Components.HeadTags url={Posts.getPageUrl(post, true)} title={post.title} image={post.thumbnailUrl} description={post.excerpt} />
+
           <Components.PostsItem post={post} currentUser={this.props.currentUser} />
 
-          {post.htmlBody ? <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div> : null}
-
-          <Components.PostsCommentsThread terms={{postId: post._id, view: 'postComments'}} />
+          <div>
+            {post.htmlBody ? <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div> : null}
+            <Components.PostsCommentsThread terms={{postId: post._id, view: 'postComments'}} />
+          </div>
 
         </div> 
       );
