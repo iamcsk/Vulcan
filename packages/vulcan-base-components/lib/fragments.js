@@ -85,6 +85,20 @@ registerFragment(`
   }
 `);
 
+registerFragment(`
+  fragment CategoriesListContainer on Category {
+    # vulcan:categories
+    ...CategoriesMinimumInfo
+    description
+    order
+    image
+    parentId
+    parent {
+      ...CategoriesMinimumInfo
+    }
+  }
+`);
+
 // ------------------------------ Posts ------------------------------ //
 
 registerFragment(`

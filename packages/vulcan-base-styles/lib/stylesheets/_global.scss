@@ -1,5 +1,6 @@
 body{
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif;
+  background: #F7F8F9;
 }
 
 .main, .footer, .header{
@@ -24,3 +25,25 @@ a{
 .message.error {
   color: $red;
 }
+
+
+.btn-primary{
+	background: $green-river;
+	border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus  {
+	background: $green-sea !important;
+	border: none;
+}
+
+
+.btn-primary:active{
+	background: $green-bsea !important;	
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus{
+	border: none;
+	outline: none;
+}
+

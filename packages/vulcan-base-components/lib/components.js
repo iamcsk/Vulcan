@@ -49,6 +49,7 @@ import './comments/CommentsLoadMore.jsx';
 // categories
 
 import './categories/CategoriesList.jsx';
+import './categories/CategoriesListContainer.jsx';
 import './categories/CategoriesNode.jsx';
 import './categories/Category.jsx';
 import './categories/CategoriesEditForm.jsx';

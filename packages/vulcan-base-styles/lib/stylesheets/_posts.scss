@@ -60,10 +60,10 @@
 }
 
 .posts-list-content{
-  border-top: $border;
+  // border-top: $border;
   // padding-top: 15px;
   // margin-top: 15px;
-  margin-bottom: $vmargin;
+  // margin-bottom: $vmargin;
 }
 
 .posts-load-more, .comments-load-more{
@@ -91,8 +91,8 @@
   @include medium-large{
     @include flex-center;
   }
-  border-bottom: $border;
-  padding: $vmargin 5px;
+  // border-bottom: $border;
+  // padding: $vmargin 5px;
   // margin-bottom: 15px;
   &.posts-sticky{
     background: $light-yellow;
@@ -170,10 +170,10 @@
     display: block;
     font-size: $small-font;
     @include border;
-    @include border-radius;
     margin-right: 5px;
-    padding: 2px 6px;
-    @include activeHover;
+    padding: 2px 9px;
+    border-radius: 2px;
+    // @include activeHover;
   }
 }
 
@@ -301,3 +301,4 @@
   justify-content: space-between;
   margin-bottom: $vmargin * 2;
 }
+

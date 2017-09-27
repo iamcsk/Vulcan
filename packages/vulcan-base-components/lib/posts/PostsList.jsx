@@ -17,18 +17,23 @@ const PostsList = ({className, results, loading, count, totalCount, loadMore, sh
     const hasMore = totalCount > results.length;
 
     return (
-      <div className={classNames(className, 'posts-list')}>
-        {showHeader ? <Components.PostsListHeader/> : null}
-        {error ? <Error error={Utils.decodeIntlError(error)} /> : null }
-        <div className="posts-list-content">
-          {results.map(post => <Components.PostsItem post={post} key={post._id} currentUser={currentUser} terms={terms} />)}
+      <div className={classNames(className, 'posts-list fx row')}>
+        <div className="fx1 side-nav">
+          <Components.CategoriesListContainer /> 
         </div>
-        {showLoadMore ? 
-          hasMore ? 
-            <Components.PostsLoadMore loading={loadingMore} loadMore={loadMore} count={count} totalCount={totalCount} /> : 
-            <Components.PostsNoMore/> : 
-          null
-        }
+        <div className="fx2 main-content">
+          {showHeader ? <Components.PostsListHeader/> : null}
+          {error ? <Error error={Utils.decodeIntlError(error)} /> : null }
+          <div className="posts-list-content">
+            {results.map(post => <Components.PostsItem post={post} key={post._id} currentUser={currentUser} terms={terms} />)}
+          </div>
+          {showLoadMore ? 
+            hasMore ? 
+              <Components.PostsLoadMore loading={loadingMore} loadMore={loadMore} count={count} totalCount={totalCount} /> : 
+              <Components.PostsNoMore/> : 
+            null
+          }
+        </div>        
       </div>
     )
   } else if (loading) {

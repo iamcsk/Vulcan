@@ -193,7 +193,7 @@ addStrings('en', {
 
   "app.loading": "Loading…",
   "app.404": "Sorry, we couldn't find what you were looking for.",
-  "app.powered_by": "Built with VulcanJS",
+  "app.powered_by": "",
   "app.or": "Or",
   "app.noPermission": "Sorry, you do not have the permission to do this at this time.",
   "app.operation_not_allowed": 'Sorry, you don\'t have the rights to perform the operation "{value}"',
