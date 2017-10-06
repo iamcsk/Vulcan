@@ -1,0 +1,222 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html, body{
+ font-family: 'Nunito', 'Quicksand',   sans-serif;
+ overflow: hidden;
+}
+
+html, body, #react-app, .wrapper-posts-list, .posts-list{
+  height: 100%;
+}
+
+.main{
+ // height: calc(100% - 208px);
+}
+
+.logo-hello {
+  display: flex;
+  justify-content: center;
+  color: #333;
+}
+
+.post-red{
+  background-color: #FFD3D2;
+}
+.post-blue{
+  background-color: #D2F5FF;
+}
+.post-yellow{
+  background-color: #FBFFD2;
+}
+.post-green{
+  background-color: #D2FFD2;
+}
+
+.header{
+  padding: 2px;
+}
+
+.users-menu-name {
+    color: #fff;
+}
+
+a{
+	color: #000;
+}
+
+h1.logo-text a {
+  color: #fff;
+  font-size: 30px;
+}
+
+button{
+  border-radius: 2px !important;
+}
+
+@media screen and (max-width: 780px) {
+  .nav {
+    margin: 8px;
+  }
+
+  .side-nav{
+    display: none;
+  }
+
+  .posts-list-header-categories{
+    display: block;
+  }
+
+  .posts-list-header > .modal-trigger {
+    margin-bottom: 8px;
+  }
+
+  .header.fx {
+    flex-direction: column;
+  }
+
+  .search-form {
+    margin: 0px 24px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+
+  .side-nav{
+    display: block;
+  }
+  .posts-list-header-categories{
+    display: none;
+  }
+
+}
+
+.posts-list-header{
+  margin-top: 8px;
+}
+
+.posts-list-content{
+  // overflow: auto;
+  // height: 70vh;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+.fx{
+  display: flex;
+}
+
+.fx2{
+  flex-grow:2;
+}
+
+.fx1{
+  flex-grow:1;
+}
+
+.side-nav{
+  padding: 0px 26px;
+  max-width: 20%;
+  min-width: 264px;
+}
+
+.categories-node .category-menu-item .modal-trigger .edit-category-link {
+    display: none;
+}
+
+.categories-node:hover .category-menu-item .modal-trigger .edit-category-link {
+    display: block;
+}
+
+
+.main-content, .side-nav{
+  height: 86vh;
+  padding: 0px 8px 10px 18px;
+}
+
+
+.page.users-edit-form, .posts-list {
+    padding-top: 40px;
+}
+
+.posts-item {
+    padding: 15px;
+    min-height: 120px;
+    background: #fff;
+    margin-bottom: 16px;
+}
+
+.jend{
+  justify-content: flex-end
+}
+
+.search-form form input {
+    border: none;
+    border-radius: 1px;
+}
+
+h3.posts-item-title {
+    padding-bottom: 2px;
+}
+
+.form-section > div {
+    padding: 14px;
+}
+
+h3.posts-item-title > a:hover {
+  text-decoration: underline !important;
+}
+
+.posts-item-content {
+    padding: 4px;
+}
+
+.close {
+  opacity: 1 !important;
+}
+
+button.close {
+    font-size: 26px;
+}
+
+.modal-header {
+    background: #1abc9c;
+    color: #fff;
+}
+
+.header-wrapper{
+  -webkit-box-shadow: -2px 7px 10px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 7px 10px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 7px 10px -9px rgba(0, 0, 0, 0.75);
+}
+
+.categories-node, .category-menu-item {
+    font-size: 20px;
+}
+
+.flash-messages {
+    margin-top: 12px;
+}
+
+.posts-page-body {
+    background: #fff;
+    padding: 40px;
+}
+
+.posts-load-more, .comments-load-more{
+    bottom: 8px;
+}
+
+.posts-list{
+    overflow: auto;
+}
+
+
+.users-account-menu .dropdown-toggle, .users-menu .dropdown-toggle{
+  color: #fff;
+}
